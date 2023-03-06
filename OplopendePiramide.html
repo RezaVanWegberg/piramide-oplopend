@@ -13,11 +13,16 @@
     <script>
         var aantal = parseInt(prompt("Kies een aantal 'bijvoorbeeld 10' "))
         var lijst = []
+        var totaleLijst = []
+
+        for (let i = 0; i <= aantal; i++) {
+            totaleLijst.push(i)
+        }
+        document.write('Array: ', totaleLijst, '<br> <br>')
 
         for (let i = 0; i <= aantal; i++) {
             lijst.push(i)
-            let testLijst = lijst.join(" ")
-            document.write(testLijst, '<br>')
+            document.write(lijst.join(""), '<br>')
 
         }
     </script>
